@@ -5,7 +5,7 @@
  * Description: Renders valid OPML from any source in a tree-like view. Links to external OPML files as well as RSS, RDF, and Atom feeds are expanded in place.
  * Author: Dan MacTough
  * Author URI: http://www.yabfog.com/
- * Version: 0.4c (beta)
+ * Version: 0.5
  * GitHub Plugin URI: https://github.com/timnolte/optimal
  * License: GPL
  * 
