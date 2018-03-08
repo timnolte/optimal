@@ -75,8 +75,8 @@ function OPMLContent ($content = '') {
 		} else {
 			$flags = 2;
 		}
-		$url = preg_replace('~&#x([0-9a-f]+);~ei', 'chr(hexdec("\\1"))', $url);
-		$url = preg_replace('~&#([0-9]+);~e', 'chr("\\1")', $url);
+		$url = preg_replace_callback('/&#x([0-9a-f]+)/i', function($matches) { return chr(hexdec($matches[0])); }, $url);
+		$url = preg_replace_callback('/&#([0-9]+)/', function($matches) { return chr($matches[0]); }, $url);
 		$url = html_entity_decode($url);
 		$find[] = "%". str_replace('?', '\?', $match[0]) ."%";
 		if ($flags & 1)
