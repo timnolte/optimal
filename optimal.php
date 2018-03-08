@@ -6,6 +6,7 @@ Description: Renders valid OPML from any source in a tree-like view. Links to ex
 Version: 0.4c (beta)
 Author: Dan MacTough
 Author URI: http://www.yabfog.com/
+GitHub Plugin URI: https://github.com/timnolte/optimal
 License: GPL
 
 Copyright (C) 2006 Dan MacTough
